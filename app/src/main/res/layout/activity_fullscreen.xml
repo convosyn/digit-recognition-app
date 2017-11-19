@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.filoble.hi.FullscreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/startScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/small_1420"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Add Image"
+            android:layout_alignTop="@id/backImage"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageForResult">
+
+        <ImageView
+            android:id="@+id/imageObtained"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/nnResult"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:fontFamily="casual"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/button_text"
+        android:textAllCaps="false"
+        android:fontFamily="casual"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:padding="10dp" />
+
+</RelativeLayout>
